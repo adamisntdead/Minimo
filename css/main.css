@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: HelveticaNeueThin;
+    src: url(fonts/HelveticaNeue-Thin.woff2);
+}
+
+@font-face {
+    font-family: HelveticaNeueUltraLight;
+    src: url(fonts/HelveticaNeue-UltraLight.woff2);
+}
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+    color: #FFF;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Page Background
+   ========================================================================== */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(-172deg, #07013E 5%, #46224C 90%);
+}
+
+/* ==========================================================================
+   Left Pane / Section (Upper on mobile)
+   ========================================================================== */
+
+.left-pane {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    height: 100%;
+}
+
+.left-inner {
+    width: 60%;
+    margin: auto;
+}
+
+.left-pane a {
+    color: #4990E2;
+}
+
+
+.left-pane hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid #FFF;
+    margin: 2em 0;
+    padding: 0;
+    width: 25%;
+}
+
+.heading-text {
+    font-family: 'HelveticaNeueThin', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.main-text {
+    font-family: 'HelveticaNeueUltraLight', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+/* ==========================================================================
+   Right Pane / Section (Lower on mobile)
+   ========================================================================== */
+
+.right-pane {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-pane img {
+    height: 80vh;
+    margin-right: 30%;
+    margin: auto;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 730px) {
+    .left-pane {
+        width: 100%;
+    }
+
+    .right-pane {
+        width: 100%;
+    }
+}
+
