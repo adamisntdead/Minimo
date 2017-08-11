@@ -1,6 +1,6 @@
 # Minimo
 
-> A Responsive, Minimal App Landing Page
+> A Responsive, Minimal App Landing Page Template
 
 ## Usage
 
